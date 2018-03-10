@@ -10,8 +10,88 @@ indexes:
 # automatically uploaded to the admin console when you next deploy
 # your application using appcfg.py.
 
+- kind: MinimalPair
+  properties:
+  - name: __key__
+    direction: desc
+
+- kind: MinimalPair
+  properties:
+  - name: _idx_icontains_word_a_0
+  - name: word_a
+    direction: desc
+  - name: word_b
+    direction: desc
+  - name: __key__
+    direction: desc
+
+- kind: MinimalPair
+  properties:
+  - name: _idx_icontains_word_b_0
+  - name: word_a
+    direction: desc
+  - name: word_b
+    direction: desc
+  - name: __key__
+    direction: desc
+
+- kind: MinimalPair
+  properties:
+  - name: _idx_iexact_word_a
+  - name: word_a
+    direction: desc
+  - name: word_b
+    direction: desc
+  - name: __key__
+    direction: desc
+
+- kind: MinimalPair
+  properties:
+  - name: word_a
+  - name: __key__
+    direction: desc
+
+- kind: MinimalPair
+  properties:
+  - name: word_a
+  - name: word_b
+  - name: __key__
+    direction: desc
+
+- kind: MinimalPair
+  properties:
+  - name: word_a
+  - name: word_b
+  - name: created_at
+  - name: __key__
+    direction: desc
+
+- kind: MinimalPair
+  properties:
+  - name: word_a
+  - name: word_b
+  - name: created_at
+    direction: desc
+  - name: __key__
+    direction: desc
+
+- kind: MinimalPair
+  properties:
+  - name: word_a
+    direction: desc
+  - name: word_b
+    direction: desc
+  - name: __key__
+    direction: desc
+
 - kind: ServiceRule
   properties:
+  - name: __key__
+    direction: desc
+
+- kind: auth_group
+  properties:
+  - name: name
   - name: __key__
     direction: desc
 

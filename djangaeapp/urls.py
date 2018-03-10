@@ -6,10 +6,10 @@ from django.contrib.staticfiles.views import serve
 import session_csrf
 session_csrf.monkeypatch()
 
-from models import ServiceRule
+import models
 from django.contrib import admin
 admin.autodiscover()
-admin.site.register(ServiceRule)
+models.register()
 
 urlpatterns = (
     # Examples:

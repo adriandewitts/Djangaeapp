@@ -24,10 +24,7 @@ from .boot import get_app_config
 SECRET_KEY = get_app_config().secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine/'):
-    DEBUG = False
-else:
-    DEBUG = True
+DEBUG = True
 
 # Application definition
 
