@@ -6,10 +6,8 @@ from django.contrib.staticfiles.views import serve
 import session_csrf
 session_csrf.monkeypatch()
 
-import models
 from django.contrib import admin
 admin.autodiscover()
-models.register()
 
 urlpatterns = (
     # Examples:

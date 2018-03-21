@@ -89,6 +89,17 @@ indexes:
   - name: __key__
     direction: desc
 
+- kind: WordSetLevel
+  properties:
+  - name: __key__
+    direction: desc
+
+- kind: WordSetLevel
+  properties:
+  - name: level
+  - name: __key__
+    direction: desc
+
 - kind: auth_group
   properties:
   - name: name
@@ -102,8 +113,29 @@ indexes:
   - name: __key__
     direction: desc
 
+- kind: djangaeadmin_minimalpair
+  properties:
+  - name: word_a
+  - name: word_b
+  - name: __key__
+    direction: desc
+
+- kind: djangaeadmin_minimalpair
+  properties:
+  - name: word_b
+    direction: desc
+  - name: word_a
+  - name: __key__
+    direction: desc
+
 - kind: djangaeapp_profile
   properties:
+  - name: __key__
+    direction: desc
+
+- kind: djangaeapp_wordsetlevel
+  properties:
+  - name: level
   - name: __key__
     direction: desc
 
